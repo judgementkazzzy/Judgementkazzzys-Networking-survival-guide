@@ -11,20 +11,18 @@ import methodMadness as mad
 import ipv4SubbnetingMini as ipv4
 
 def main():
-    
     #gonna have to make another while loop but for now just check for the 1 option is pressed
     #be sure to add a "are you sure?" option when doing this 
-    
-    mad.textCrawl("Networking Study Aid V.01\n")
-    mad.textCrawlNoWait("1. IPV4 Subneting practice\n")
-    mad.textCrawlNoWait("2. use\n")
-    mad.textCrawlNoWait("3. inventory\n")
-    mad.textCrawlNoWait("4. command\n")
+    mad.textCrawlNoWait("Networking Study Aid V.01\n")
+    mad.textCrawlNoWait("1. Subneting_Practice\n")
+    mad.textCrawlNoWait("2. TBD\n")
+    mad.textCrawlNoWait("3. TBD\n")
+    mad.textCrawlNoWait("4. TBD\n")
     playerchoice = input()
     
-    if playerchoice == '1':
-        ipv4.prefix()
-    
+    match playerchoice:
+        case '1':
+            ipv4.subnetting.menu()
 
 if __name__ == "__main__":
     main()
